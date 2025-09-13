@@ -34,6 +34,27 @@ cd energy-consumption-gan
 pip install -r requirements.txt
 ```
 
+
+## Data Setup 📊
+
+The dataset for this project is not included in the repository due to its size.
+
+1.  Download the `Smart_meters_london_2013.csv` file from this link:
+    * [**[Smart_meters_london_2013](https://1drv.ms/f/c/590086cda647cfb8/Er4YA9-y1pJMlmzy5ChaC8cB9NB3XBkdPPfyb_PZbt8Rng?e=83zcJG)**]
+
+2.  Create the necessary folders and place the downloaded file in `Data/raw/`. The final structure should look like this:
+
+    ```
+    Your-Project-Folder/
+    └── Data/
+        ├── processed/
+        │   └── clusters/
+        └── raw/
+            └── metersdata.csv   <-- Place downloaded file here
+    ```
+3. The clusters folder will later be populated with the clustered data files after executing the data analysis notebooks. 
+
+
 ### Usage
 1. Run `notebooks/01_data_analysis_seasonal.ipynb` for clustering
 2. Run `notebooks/03_gan_training.ipynb` for model training  
