@@ -35,7 +35,7 @@ pip install -r requirements.txt
 ```
 
 
-## Data Setup 📊
+## Data Setup  📊
 
 The dataset for this project is not included in the repository due to its size.
 
